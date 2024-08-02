@@ -15,6 +15,7 @@ inputs:
 runs:
   using: "docker"
   image: "Dockerfile"
+  options: "--network web" 
   entrypoint: /bin/sh
   args:
     - -c
